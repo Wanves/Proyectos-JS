@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  text-shadow: 0 0 0.5rem white;
+}
+.body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./imagenes/a.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor {
+  width: 40%;
+  max-width: 47rem;
+  min-height: 40rem;
+  background-color: #0a0a23b5;
+  box-shadow: 0 0 1rem black;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contenedor_interno {
+  width: 80%;
+  min-height: 20rem;
+  background-color: rgba(255, 228, 196, 0.496);
+  box-shadow: 0 0 0.5rem rgba(255, 228, 196, 0.496);
+  border-radius: 0.5rem;
+  margin: 2.5rem 0;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  padding: .5rem;
+}
+.contenido_centrado {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#titulo {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Courgette", cursive;
+}
+#cita {
+  font-size: 2rem;
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+  color: #0a0a23;
+  text-shadow: 0 0 0.2rem #0a0a23;
+  font-weight: bold;
+  font-family: "Courgette", cursive;
+}
+#autor {
+  color: indianred;
+  text-shadow: 0 0 0.2rem indianred;
+  font-weight: bold;
+  font-family: "Courgette", cursive;
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#boton_cambiar_cita {
+  border-radius: 0.5rem;
+  width: 90%;
+  height: 4rem;
+  font-size: 1.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  font-weight: bold;
+  font-family: "Courgette", cursive;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border-style: solid;
+  cursor: pointer;
+}
+
+/* ----------------------------------- */
+@media (max-width: 48rem) {
+  .contenedor {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .contenido_centrado {
+    text-align: center;
+    margin: 0 0.5rem;
+  }
+  .contenedor_interno {
+    width: 90%;
+    margin: 2.5rem 0;
+    padding: .5rem;
+  }
+  #boton_cambiar_cita {
+   margin: 1rem 0;
+  }
+  
+}

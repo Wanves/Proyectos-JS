@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" href="imagenes/ruedaColor.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color RGB</title>
+  </head>
+  <body class="body">
+    <div class="contenedor_principal">
+      <div class="contenedor_interno">
+        <div class="color">
+          <label for="rojo">Rojo (R)</label>
+          <input id="rojo" type="range" min="0" max="255" value="23" step="1" />
+          <p id="texto_rojo"></p>
+        </div>
+        <div class="color">
+          <label for="verde">Verde (V)</label>
+          <input
+            id="verde"
+            type="range"
+            min="0"
+            max="255"
+            value="41"
+            step="1" />
+          <p id="texto_verde"></p>
+        </div>
+        <div class="color">
+          <label for="azul">Azul (A)</label>
+          <input id="azul" type="range" min="0" max="255" value="56" step="1" />
+          <p id="texto_azul"></p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
